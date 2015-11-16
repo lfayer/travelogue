@@ -8,16 +8,16 @@
 
 </style>
 <link rel="stylesheet" id="skrollr-bootstrap-grid-css" href="css/bootstrap-grid.css" type="text/css" media="all">
-<link rel="stylesheet" id="mediaelement-css" href="/css/mediaelementplayer.min.css" type="text/css" media="all">
-<link rel="stylesheet" id="skrollr-base-css" href="/css/base.css" type="text/css" media="all">
-<link rel="stylesheet" id="skrollr-layout-css" href="/css/layout.css" type="text/css" media="all">
-<link rel="stylesheet" id="skrollr-module-css" href="/css/module.css" type="text/css" media="all">
-<link rel="stylesheet" id="skrollr-state-css" href="/css/state.css" type="text/css" media="all">
-<link rel="stylesheet" id="skrollr-theme-css" href="/css/theme.css" type="text/css" media="all">
-<link rel="stylesheet" id="modal-css" href="/css/modal.css" type="text/css" media="all">
-<script type="text/javascript" src="/js/modernizr-2.8.3.min.js"></script>
-<script type="text/javascript" src="/js/jquery.js"></script>
-<script type="text/javascript" src="/js/jquery-migrate.min.js"></script>
+<link rel="stylesheet" id="mediaelement-css" href="css/mediaelementplayer.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="skrollr-base-css" href="css/base.css" type="text/css" media="all">
+<link rel="stylesheet" id="skrollr-layout-css" href="css/layout.css" type="text/css" media="all">
+<link rel="stylesheet" id="skrollr-module-css" href="css/module.css" type="text/css" media="all">
+<link rel="stylesheet" id="skrollr-state-css" href="css/state.css" type="text/css" media="all">
+<link rel="stylesheet" id="skrollr-theme-css" href="css/theme.css" type="text/css" media="all">
+<link rel="stylesheet" id="modal-css" href="css/modal.css" type="text/css" media="all">
+<script type="text/javascript" src="js/modernizr-2.8.3.min.js"></script>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/jquery-migrate.min.js"></script>
 <style id="customized-content-colors">			a {
 				color: #505050;
 			}
@@ -126,7 +126,7 @@
 		</style>
                 <style>
                         .block-0 {
-				background-image:url(/img/<%= journal.img_path %>/<%= journal.header_img %>);
+				background-image:url(img/<%= journal.img_path %>/<%= journal.header_img %>);
 			}
                         .block-0 > h1 {
 	                        color: #b1d7dd;
@@ -244,7 +244,7 @@
                         var p = journal.sections[section].photos[photo];
 %>
 
-<figure class="volet skrollable skrollable-before" data--<%=offset%>p-bottom-top="top:100%" data--<%= offset+100 %>p-bottom-top="top:0%" style="height: 789px; top: 100%;" data-anchor-target="#<%-section.replace(/\s+/g, '-').toLowerCase()%> .gal-1"><img style="width:100%;" src="/img/<%= journal.img_path%>/<%= p.img %>">
+<figure class="volet skrollable skrollable-before" data--<%=offset%>p-bottom-top="top:100%" data--<%= offset+100 %>p-bottom-top="top:0%" style="height: 789px; top: 100%;" data-anchor-target="#<%-section.replace(/\s+/g, '-').toLowerCase()%> .gal-1"><img style="width:100%;" src="img/<%= journal.img_path%>/<%= p.img %>">
 <% if (p.caption) { %>
     <figcaption style="position: absolute; top: 0px; opacity: 1;" data--<%= offset %>p-bottom-top="opacity:1" data--<%= offset+100 %>p-bottom-top="opacity:1" data--<%= offset+120 %>p-bottom-top="opacity:0" data-anchor-target="#<%-section.replace(/\s+/g, '-').toLowerCase()%> .gal-1" class="skrollable skrollable-before">
         <p>
