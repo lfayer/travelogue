@@ -1,0 +1,33 @@
+{
+    "name": "Sample Journal",
+    "has_nav": "yes",
+    "img_path": "",
+    "header_img": "maasai-tree.jpg",
+    "sections": {
+        "Sample journal entry": {
+            "type": "text",
+            "title": "Start of a journey",
+            "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum placerat lorem eget placerat malesuada. Phasellus fringilla massa eget eleifend convallis. Mauris quis nulla eget mauris suscipit accumsan id vehicula libero. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Quisque rutrum venenatis libero, ac sagittis purus venenatis non. Cras auctor sollicitudin tempor. Nunc nisi velit, sodales non eros vel, mattis gravida lorem. Integer rutrum quam ac mi semper, id mattis nisi sodales. Nunc at rhoncus nunc, in suscipit felis. Etiam nisi enim, sodales eget rhoncus vitae, mollis at sem. Sed viverra diam non ex imperdiet, sit amet semper massa pharetra. Nullam rhoncus fringilla quam ut pellentesque."
+        },
+        "Sample gallery": {
+            "type": "gallery",
+            "photos": {
+                "sample": {
+                    "img": "church.jpg",
+                    "caption": "Tell a story of a photograph.",
+                    "metadata": {
+                        "location": "In a galaxy far far away"
+                    }
+                },
+                "sample-too": {
+                    "img": "maasai-tree.jpg",
+                    "caption": "Tell another story.",
+                    "metadata": {
+                        "author": "Leon Fayer",
+                        "date": "June 26, 2013"
+                    }
+                }
+            }
+        }
+    }
+}
