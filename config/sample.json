@@ -1,7 +1,7 @@
 {
     "name": "Sample Journal",
     "has_nav": "yes",
-    "img_path": "",
+    "img_dir": "",
     "header_img": "maasai-tree.jpg",
     "sections": {
         "Sample journal entry": {

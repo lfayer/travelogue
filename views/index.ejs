@@ -126,7 +126,7 @@
 		</style>
                 <style>
                         .block-0 {
-				background-image:url(img/<%= journal.img_path %>/<%= journal.header_img %>);
+				background-image:url(img/<%= journal.img_dir %>/<%= journal.header_img %>);
 			}
                         .block-0 > h1 {
 	                        color: #b1d7dd;
@@ -244,7 +244,7 @@
                         var p = journal.sections[section].photos[photo];
 %>
 
-<figure class="volet skrollable skrollable-before" data--<%=offset%>p-bottom-top="top:100%" data--<%= offset+100 %>p-bottom-top="top:0%" style="height: 789px; top: 100%;" data-anchor-target="#<%-section.replace(/\s+/g, '-').toLowerCase()%> .gal-1"><img style="width:100%;" src="img/<%= journal.img_path%>/<%= p.img %>">
+<figure class="volet skrollable skrollable-before" data--<%=offset%>p-bottom-top="top:100%" data--<%= offset+100 %>p-bottom-top="top:0%" style="height: 789px; top: 100%;" data-anchor-target="#<%-section.replace(/\s+/g, '-').toLowerCase()%> .gal-1"><img style="width:100%;" src="img/<%= journal.img_dir%>/<%= p.img %>">
 <% if (p.caption) { %>
     <figcaption style="position: absolute; top: 0px; opacity: 1;" data--<%= offset %>p-bottom-top="opacity:1" data--<%= offset+100 %>p-bottom-top="opacity:1" data--<%= offset+120 %>p-bottom-top="opacity:0" data-anchor-target="#<%-section.replace(/\s+/g, '-').toLowerCase()%> .gal-1" class="skrollable skrollable-before">
         <p>
@@ -302,6 +302,17 @@ Graphic Design: <a href="http://www.ostrogo.fr/" target="_blank">Gauthier Mesnil
 <script type="text/javascript" src="js/mediaelement-and-player.min.js"></script>
 <script type="text/javascript" src="js/401776a5.min.js"></script>
 <script type="text/javascript" src="js/modal.js"></script>
-	
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-13050675-1");
+pageTracker._setDomainName(".fayerplay.com");
+pageTracker._trackPageview();
+} catch(err) {}
+</script>	
 
 </body></html>
