@@ -6,6 +6,7 @@ var fs = require('fs');
 app.use(express.static(__dirname + '/public'));
 
 app.set('view engine', 'ejs');
+app.set('views','/www/travelogue/views');
 
 // util vars and funcs
 app.locals.ucfirst = function(value){
@@ -28,7 +29,7 @@ app.get('/:destination', function(req, res) {
                      { msg: 'Invalid JSON config for the trip' });
                 console.log(e);
             }
-                res.render('index',
+                res.render(journal.template || 'index',
                      {  destination: req.params.destination,
                         journal: journal });
         } else {
@@ -41,8 +42,6 @@ app.get('/:destination', function(req, res) {
 var server = app.listen(3000, function () {
   var host = server.address().address;
   var port = server.address().port;
-
-  console.log('Example app listening at http://%s:%s', host, port);
 });
 
 
