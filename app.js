@@ -34,8 +34,6 @@ app.get('/:destination', function(req, res) {
         } else {
                 res.render('error',
                      { msg: 'Trip journal ' + req.params.destination +' doesn\'t exist' });
-            console.log(req.params.destination);
-            console.log(conf_path);
         }
     });
 });
