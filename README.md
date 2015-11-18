@@ -9,5 +9,5 @@ Vertical scroller site generator for travel journals with notes and photo galler
  - sample config included (https://github.com/lfayer/travelogue/blob/master/config/sample.json)
 3. That's it.  Go to yourdomain.com/[trip] to view.
 
-
+Live example: http://fayerplay.com/travelogue/tanzania
 
